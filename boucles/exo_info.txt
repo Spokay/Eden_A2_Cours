@@ -1,0 +1,41 @@
+Exercice 1
+Afficher des nombres allant de 100 à 5.
+
+Exercice 2
+Afficher des nombres allant de 20 à 100 avec le chiffre 50 en rouge.
+
+Exercice 3
+Afficher des nombres allant de 2000 à 1930.
+
+Exercice 4
+Afficher le titre suivant 100 fois : <h1>Titre à afficher 100 fois</h1>
+
+Exercice 5
+Afficher le titre suivant "<h1>Je m\'affiche pour la Nème fois</h1>".
+Remplacer le N avec la valeur de $i (tour de boucle).
+
+Exercice 6
+Essayez de proposer un champ date de naissance en prévoyant les 31 jours
+existants dans notre calendrier .
+Résultat attendu : un select qui permet de choisir une date .
+
+Exercice 7
+En utilisant la boucle for, afficher la table de multiplication du chiffre 5.
+exemple: 5x1 = 5
+
+Exercice 8
+En utilisant deux boucles for, écrire un script qui produit le résultat ci-dessous.
+1
+22
+333
+4444
+55555
+
+Exercice 9
+Déclarer une variable avec le nom de votre choix et avec la valeur 0.
+Tant que cette variable n'atteint pas 20, il faut :
+
+- l'afficher .
+- incrémenter sa valeur de 2 .
+Si la valeur de la variable est égale à 10, la mettre en valeur avec la balise HTML appropriée.
+

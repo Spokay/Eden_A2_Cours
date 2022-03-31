@@ -1,0 +1,68 @@
+.articles-container{
+    width: 50%;
+    margin: 0 auto;
+}
+.billet{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 5px;
+}
+.article-title{
+    background-color: lightgray;
+    margin: 0;
+    padding: 3px;
+}
+.article-create{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.comments-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+    order: 1;
+}
+
+.commentaires{
+    order: 2;
+    flex-grow: 1;
+}
+.comment{
+    border: 1px solid black;
+}
+.auteur{
+    margin: 0;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+.comment-list{
+    display: flex;
+    flex-direction: row;
+    order: -1;
+}
+table{
+    border: 1px solid black;
+    text-align: left;
+    border-collapse: collapse;
+}
+table th{
+    border-bottom: 1px solid black;
+    padding: 4px;
+}
+table td{
+    padding: 4px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+textarea{
+    padding: 0;
+    width: 100%;
+}

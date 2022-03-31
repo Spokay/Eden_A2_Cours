@@ -1,0 +1,28 @@
+
+// EXERCICES SUR LES DATES:
+
+// Calculez votre âge à l’instant en cours
+// Vérifiez si la date du 29 février 2010 est valide.
+// Rédigez le script qui teste si le 1 Mai 2016 est un vendredi ou un lundi , si oui il affiche « Week-end prolongé !».
+// Calculer le temps d’exécution d'un script.
+
+/*******************************************/
+
+// Ecrire un script qui affiche la date et l'heure courantes sous les formes suivantes :
+//     Exemple d’exécution :
+//     Mon, 25 Jan 2016 23:31:01 +0100
+//     Monday/January/2016
+//     25/Jan/2016
+//     25-01-16
+//     23h: 31m: 01s
+
+/*******************************************/
+
+//     Afficher la date courante en français sous les formes suivantes :
+//     Exemple d’exécution :
+//     lundi 25 janvier 2016, 23:37
+//     25 janvier 2016
+
+/*******************************************/
+
+//     Quel jour de la semaine était le 6 novembre 1975 ?

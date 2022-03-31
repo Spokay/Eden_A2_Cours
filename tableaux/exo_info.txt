@@ -1,0 +1,105 @@
+Exercice1:
+Déclarer une variable de type array qui stocke les informations suivantes :
+France : Paris
+Allemagne : Berlin
+Italie : Rome
+Afficher les valeurs de tous les éléments du tableau en utilisant la boucle foreach.
+
+
+
+EXERCICE 2
+En utilisant la fonction rand(), remplir un tableau avec 10 nombres aléatoires.
+ Puis, tester si le chiffre 42 est dans le tableau et afficher un message en conséquence. Enfin, afficher le contenu de votre tableau avec var_dump.
+
+
+
+EXERCICE 3
+En utilisant la fonction rand(), remplir un tableau avec 10 nombres aléatoires. Puis, trier les valeurs dans deux tableaux distincts. Le premier contiendra les valeurs inférieures à 50 et le second contiendra les valeurs supérieures ou égales à 50. Enfin, afficher le contenu des deux tableaux.
+
+
+EXERCICE 4
+En utilisant le tableau ci-dessous, afficher seulement les pays qui ont une population supérieure ou égale à 20 millions d'habitants.
+
+<?php
+   $pays_population = array(
+      'France' => 67595000,
+      'Suede' => 9998000,
+      'Suisse' => 8417000,
+      'Kosovo' => 1820631,
+      'Malte' => 434403,
+      'Mexique' => 122273500,
+      'Allemagne' => 82800000,
+   );
+?>
+
+EXERCICE 8
+Créer une fonction from scratch qui s'appelle dernierElementTableau(). Elle prendra un argument de type array. Elle devra retourner le dernier élement du tableau. Si l'array est vide, il faudra retourner null;
+
+EXERCICE 9
+Créer une fonction from scratch qui s'appelle verificationPassword(). Elle prendra un argument de type string. Elle devra retourner un boolean qui vaut true si le password fait au moins 8 caractères et false si moins.
+
+EXERCICE 10
+Créer une fonction from scratch qui s'appelle remplacerLesLettres(). Elle prendra un argument de type string. Elle devra retourner cette même string mais en remplacant les e par des 3, les i par des 1 et les o par des 0 Exemple :
+
+input : "Bonjour les amis" ==> Output : B0nj0ur l3s am1s
+input : "Les cours de programmation Web sont trops cools" ==> Output : L3s c0urs d3 pr0grammat10n W3b s0nt tr0ps c00ls
+
+EXERCICE 12
+Écrivez un programme pour afficher le triangle d’etoile suivant en utilisant une boucle for.
+
+Exemple:
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+
+et
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+
+  ***
+ *   *
+ *   *
+ *****
+ *   *
+ *   *
+ *   *
+ *   *
+
+EXERCICE 14
+créer un programme qui permet de compter le nombre de caractères 'r' dans 'organiser'
+
+EXERCICE 17
+créer une fonction qui permet de detecter si l'argument passé est un palyndrome ou pas (utiliser une méthode avec une fonction appropriée et sans fonction appropriée)
+
+EXERCICE 18
+ écrire une fonction qui vérifie si une chaine de caractères est en mode lowercase
+
+ EXERCICE 19
+écrire une fonction pui permet de générer des mots de passe contenant des minuscules, majuscules,nombres et autres en utilisant la fonction shuffle()
+
+EXERCICE 20
+écrire un programme qui crée un tableau commme celui-ci :
+Array
+(
+[20] => 2
+[21] => 3
+[22] => 4
+[23] => 5
+[24] => 6
+[25] => 7
+)

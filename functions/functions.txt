@@ -1,0 +1,40 @@
+
+/**************************** ExO 1 *****************************/
+Créer une fonction from scratch qui s'appelle concatenation().
+Elle prendra deux arguments de type string. Elle devra retourner la concatenation
+des deux. Exemple : argument 1 = Antoine Argument 2 = Griezmann;
+Resultat : je m'appelle Antoine Griezmann (on mettra la chaine Griezmann comme important)
+
+/**************************** ExO 2 *****************************/
+
+Créer une fonction from scratch qui s'appelle somme(), elle prendra seulement
+un paramètre par defaut $argument2 (avec sa valeur) .
+Elle devra retourner la somme de deux variables ($argument1 et $argument2)
+
+/**************************** ExO 3 *****************************/
+
+Créer une fonction from scratch qui s'appelle estIlMajeure(). Elle prendra un argument
+de type int. Elle devra retourner un boolean. Si age >= 18 elle doit retourner true
+si age < 18 elle doit retourner false Exemple : age = 5 ==> false age = 34 ==> true .
+Vous pouvez utilisez un if,elseif et else
+
+/**************************** ExO 4 *****************************/
+
+Créer une fonction from scratch qui s'appelle plusGrand(). Elle prendra deux
+arguments de type int. Elle devra retourner le plus grand des deux.
+
+/**************************** ExO 5 *****************************/
+
+Créer une fonction from scratch qui s'appelle plusPetit(). Elle prendra trois
+arguments de type int. Elle devra retourner le plus petit des trois.
+
+/**************************** ExO 6 *****************************/
+
+ creer une fonction qui prend 2 paramètres (saison et temperature) et qui permet d'afficher une phrase comme ceci :
+ "Nous sommes en hiver et il fait 20 degrés" .
+ Ici "hiver" et "20" seront remplacés respectivement par les variables $saisons et $temperature
+ Il faut prévoir de mettre un "S" à la fin de dégré si dégré doit être au pluriel et sans "S" si c'est le contraire .
+
+
+
+

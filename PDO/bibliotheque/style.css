@@ -1,0 +1,23 @@
+nav a{
+    text-decoration: none;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+nav a:hover{
+    background-color: lightgray;
+    color: #007bff;
+}
+i{
+    color: #343a40;
+    transition: 0.3s ease;
+}
+i.fa-pencil-alt:hover{
+    color: #17a2b8;
+}
+i.fa-trash-alt:hover{
+    color: #dc3545;
+}
+.edit-leave{
+    position: fixed;
+    bottom: 0;
+}

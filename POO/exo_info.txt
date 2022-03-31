@@ -1,0 +1,112 @@
+ecrire une class nommée Person ayant comme attribut : prenom, nom, age
+et une autre class nommée Produit ayant comme attribut : nom, prix, quantite
+créer une fichier différent et afficher les informations qui suivent : je m'appele Louis macron j'ai 27 ans, je viens d'acheter 3 montres à 200 euros au total
+je m'appele Alain Delon j'ai 37 ans, je viens d'acheter 2 telephones à 1400 euros au total
+
+
+
+à partir du constructeur appeler les methodes
+
+créer une class animal avec comme attribut : nom, prix en private
+on utilise les memes methodes dans les classes enfant pour afficher le nom et le prix d'un animal sachant que les animaux disponibles sont : chien , chat
+
+
+Définir une classe Rectangle ayant les attributs suivants : Longueur et Largeur.
+Définir à l'aide des propriétés les méthodes d'accès aux attributs de la classe.
+Ajouter un constructeur d'initialisation.
+Ajouter les méthodes suivantes :
+Périmètre ( ) : retourne le périmètre du rectangle.
+Aire( ) : retourne l'aire du rectangle.
+EstCarre( ) : vérifie si le rectangle est un carré.
+AfficherRectangle( ) : expose les caractéristiques d'un rectangle comme suit :
+Longueur : […] - Largeur : […] - Périmètre : […] - Aire : […] - Il s'agit d'un carré / Il ne s'agit pas d'un carré
+
+/***** EXO DEUX *****/
+
+Si vous avez déjà codé en Javascript vous aurez certainement vu l'objet string et les méthodes qui permettent de le manipuler (comme: length, charAt(), indexOf(), substring()...)
+
+L'objectif de cet exercice est de créer une classe PHP au nom de String qui contient les méthodes du même nom que celles de Javascript et qui font les mêmes tâches. Autrement dit, à l'aide de la classe que vous aurez créé, quelqu'un qui s'y connait en Javascript peut bien traiter les chaines de caractères en PHP même s'il n'a pas de connaissances poussées en ce langage.
+
+Pour récapituler voilà ce que font les méthodes que l'on va créer (Il s'agit d'un extrait du cours de Javascript sur ce site dont voici le lien):
+length: Cet attribut retourne le nombre de caractères contenus dans la chaîne.
+charAt(): La méthode charAt(x) (avec A majuscule) permet de retourner le caractères qui se trouve à la position x passé en paramètre. Le paramètre est un entier qui commence de 0. La valeur 0 indexe le premier caractère de la chaîne.
+indexOf(): La méthode indexOf(car) (avec O en majuscule) permet de retourner la position
+ du caractères car passé en paramètre. Si le caractère existe dans la chaîne, alors sa position (comprise entre 0 et la longueur de la chaîne - 1) est retournée, sinon (le caractère ne figure pas dans la chaîne) alors la valeur -1 est retournée. La méthode indexOf() peut accueillir un deuxième paramètre qui est un entier qui indique à partir de quel position de la chaîne on commencera la recherche du caractère passé en premier paramètre.
+substring(): La méthode substring(début,fin) permet d'extraire une partie de la chaîne de caractères commençant de la position début et finissant à la position fin-1.
+split(): La méthode split(occurence) permet de retourner un tableau à partir des fractions de la chaîne de caractères obtenues en divisant celle-ci au niveau de l'occurence.
+toLowerCase(): La méthode toLowerCase() permet de retourner la chaîne de caractère entièrement en minuscules.
+toUpperCase(): La méthode toUpperCase() permet de retourner la chaîne de caractère entièrement en majuscules
+
+/***** EXO TROIS *****/
+
+Un point qui représente son centre
+Son rayon r
+On peut créer un cercle en précisant son centre et son rayon.
+
+Dans ce problème, nous allons commencer tout d’abord par définir la classe Point définie par :
+
+Les attributs: x et y de type réel
+Un constructeur qui permet de définir les valeurs de x et de y.
+Une méthode Afficher () qui affiche une chaîne de caractères POINT(x,y).
+Les opérations que l’on souhaite exécuter sur un cercle sont :
+
+getPerimetre(): retourne le périmètre du cercle.
+getSurface(): retourne la surface du cercle.
+appartient (Point p): retourne si le point p appartient ou non au cercle.
+Afficher (): Affiche une chaîne de caractères de type CERCLE(x,y,R)
+
+/***** EXO QUATRE *****/
+
+Définir une classe Client avec les attributs suivants : CIN, Nom, Prénom, Tél.
+Définir à l’aide des propriétés les méthodes d’accès aux différents attributs de la classe.
+Définir un constructeur permettant d’initialiser tous les attributs.
+Définir un constructeur permettant d’initialiser le CIN, le nom et le prénom.
+Définir la méthode Afficher ( ) permettant d’afficher les informations du Client en cours.
+Créer Une classe Compte caractérisée par son solde et un code qui est incrémenté lors de sa création ainsi que son propriétaire qui représente un client.
+Définir à l’aide des propriétés les méthodes d’accès aux différents attributs de la classe (le numéro de compte et le solde sont en lecture seule)
+Définir un constructeur permettant de créer un compte en indiquant son propriétaire.
+Ajouter à la classe Compte les méthodes suivantes :
+Une méthode permettant de Crediter() le compte, prenant une somme en paramètre.
+Une méthode permettant de Crediter() le compte, prenant une somme et un compte en paramètres, créditant le compte et débitant le compte passé en paramètres.
+Une méthode permettant de Debiter() le compte, prenant une somme en paramètre
+Une méthode permettant de Débiter() le compte, prenant une somme et un compte bancaire en paramètres, débitant le compte et créditant le compte passé en paramètres
+Une méthode qui permet d’afficher le résumé d’un compte.
+Une méthode qui permet d’afficher le nombre des comptes crées.
+//Source : www.exelib.net
+
+
+
+
+Exercice 1:
+Dans le projet « php_objet », créer un nouveau répertoire nommé « calcul_impots ». Les fichiers de l’exercice
+seront à placer dans ce dossier.
+Dans un fichier index.php créer un formulaire contenant une zone de saisie pour le nom, le revenu et un bouton
+OK pour soumettre le formulaire.
+Le but de ce formulaire est de permettre le calcul de l’impôt pour une personne. Le taux de l’impôt est de 9% pour
+des revenus inférieurs à 15 000 euros et de 14 % pour des revenus supérieurs à 15 000.
+Pour les revenus supérieurs à 15 000 euros, la part de revenus inférieure à 15 000 euros est taxé à 9% et la part de
+revenus supérieure à 15 000 euros est taxée à 14%.
+Une fois le formulaire envoyé grâce au bouton OK, une phrase s’affiche du style « Mr Devoldère votre impôt est de
+600 euros ».
+Le programme doit obligatoirement contenir une classe « Impot » dans un fichier « Impot.php » avec un
+constructeur (__construct), une méthode AfficheImpot() qui retourne une chaîne contenant le message à afficher
+(« Mr Devoldère votre impôt est de 600 euros » par exemple) et une méthode CalculImpôt() qui retourne le
+montant de l’impôt suivant le revenu.
+Les taux de l’impôt (14% et 9%) devront être définis dans des constantes.
+La création de l’objet et l’appel des méthodes doivent être réalisés dans un fichier resultatImpot.php qui sera la
+cible de l’action du formulaire crée dans index.php.
+
+
+
+/**********************************************************************************/
+
+Dans le projet « php_objet », créer un nouveau répertoire nommé « identification ». Les fichiers de l’exercice seront
+à placer dans ce dossier.
+Dans une page index.php créer un formulaire avec une zone de saisie pour le nom d’utilisateur, le mot de passe et
+un bouton OK. On considère que si l’utilisateur rentre le nom « admin » et le mot de passe « Cdi1234 » il est
+connecté. Si le mot de passe ou le login est incorrect renvoyer un message d’erreur.
+Dès que l’utilisateur est connecté il est renvoyé vers une nouvelle page « info.php » qui contient une liste des
+dernières actualités. La page « info.php » contient un lien « déconnecter » pour se déconnecter. Un clic sur «
+déconnecter » renvoie vers le formulaire de connexion (index.php).
+Si l’utilisateur n’est pas connecté il n’a pas le droit de voir les actualités de la page « info.php », il doit être renvoyé
+vers la page de login (index.php).

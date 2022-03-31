@@ -1,0 +1,137 @@
+Exercice 5 : Création d'un Repertoire
+Exercice 5.1 Créez une base de données que vous appellerez « repertoire ».
+A l’intérieur de celle-ci, vous créerez une table que vous appellerez « annuaire » avec les champs suivant :
+- id_annuaire (INT, 3, AI - PK)
+- nom (VARCHAR, 30)
+- prenom (VARCHAR, 30)
+- telephone (INT, 10, zerofill)
+- profession (VARCHAR, 30)
+- ville (VARCHAR, 30)
+- codepostal (INT, 5, zerofill)
+- adresse (VARCHAR, 30)
+- date_de_naissance (DATE)
+- sexe (ENUM, 'm','f')
+- description (TEXT)
+
+
+Exercice 5.2 Créez une page « formulaire.php » qui aura une apparence similaire à l’image ci-dessous.
+explication PHP
+
+- Afficher le récapitulatif des saisies au dessus du formulaire (sur la même page).
+
+Exercice 5.3 Une fois les valeurs récupérées du formulaire, il faudra développer le code permettant l’insertion des saisies dans la table « annuaire » de la base de données « repertoire ».
+Chaque validation du formulaire doit ajouter une nouvelle ligne d’enregistrement dans la table « annuaire ».
+explication PHP
+
+Exercice 5.4 Créez une page « affichage_annuaire.php » qui permettra de récupérer les données et ainsi afficher le nom des champs suivi des informations contenues à l’intérieur de la table « annuaire ».
+explication PHP
+
+Exercice 5.5, Sur la page « affichage_annuaire.php », Ajouter 2 informations :
+- Le nombre d’hommes
+- Le nombre de femmes
+
+explication PHP
+
+Exercice 5.6, MODIFICATION ET SUPPRESSION Sur la page « affichage_annuaire.php » :
+Donnez la possibilité de modifier les enregistrements (ouvrant un formulaire pour effectuer les modifications)
+Donnez la possibilité de supprimer les enregistrements (avec un message demandant une confirmation).
+
+Ces deux actions doivent être possibles directement via la page web.
+
+Exercice 6 : Création d'une Bibliothèque
+Consigne
+Ce sujet à pour objectif de tester vos compétences techniques (php et sql) en situation réélle.
+
+Exercice 6.1 – Creation d'une base de données
+Créez une base de données que vous appellerez « bibliotheque ».
+A l’intérieur de celle-ci, vous créerez trois tables que vous appellerez « abonne », « emprunt » et « livre » avec les champs suivants :
+
+Table : abonne
+Champs :
+- id_abonne (PK – AI – INT(3))
+- prenom (VARCHAR(25))
+
+Table : emprunt
+Champs :
+- id_emprunt (PK – AI – INT(3))
+- id_livre (FK - INT(3))
+- id_abonne (FK - INT(3))
+- date_sortie (DATE)
+- date_rendu (DATE – DEFAULT NULL)
+
+Table : livre
+Champs :
+- id_livre(PK – AI – INT(3))
+- auteur (VARCHAR(25))
+- titre (VARCHAR(50))
+
+
+Et voici les contenus :
+
+Abonne
+id_abonne	prenom
+1	Guillaume
+2	Benoit
+3	Chloe
+4	Laura
+
+Emprunt
+id_emprunt	id_livre	id_abonne	date_sortie	date_rendu
+1	100	1	2011-12-17	2011-12-18
+2	101	2	2011-12-18	2011-12-20
+3	100	3	2011-12-19	2011-12-22
+4	103	4	2011-12-19	2011-12-22
+5	104	1	2011-12-19	2011-12-28
+6	105	2	2012-03-20	2012-03-26
+7	105	3	2013-06-13	NULL
+8	100	2	2013-06-15	NULL
+
+Livre
+id_livre	auteur	titre
+100	GUY DE MAUPASSANT	Une vie
+101	GUY DE MAUPASSANT	Bel-Ami
+102	HONORE DE BALZAC	Le pere Goriot
+103	ALPHONSE DAUDET	Le Petit chose
+104	ALEXANDRE DUMAS	La Reine Margot
+105	ALEXANDRE DUMAS	Les Trois Mousquetaires
+
+Exercice 6.2 – Les Entites
+Prévoir 3 affichages :
+o abonne
+o emprunt
+o livre
+Mettre en place un menu de navigation pour accèder aux différents affichages (1 affichage par entité).
+
+Exercice 6.3 - formulaire et enregistrement des donnees
+o Créez un formulaire pour chaque entité : abonne, emprunt et livre.
+o Réaliser des contrôles de saisies.
+o Enregistrer les données dans les tables correspondantes de la base.
+
+Exercice 6.4 - Affichage
+o Pour chaque entité, créer une partie qui affichera chaque table sql en table html sur la page web. ( « abonne », « livre » et « emprunt » ).
+
+Exercice 6.5 – Modification et Suppression
+o Développer une option permettant la suppression des enregistrements (prévoir un message demandant une confirmation).
+o Développer une option permettant la modification des enregistrements (prévoir l'ouverture d'un formulaire pour effectuer les modifications).
+Ces deux actions doivent être possible directement via la page web pour toutes les données (abonne, livre et emprunt).
+
+Type de résultat attendu
+
+
+
+EXERCICE 6.6
+Réaliser divers affichages.
+o Afficher le nombre d’abonnés.
+o Afficher le nombre de livres.
+o Afficher le nombre d'emprunts.
+o Afficher les numéros et titres des livres n’ayant pas été rendus à la bibliothèque
+o Afficher le n° de(s) livre(s) que Chloé a emprunté à la bibliothèque
+o Afficher la liste des abonnés ayant déjà emprunté un livre d’Alphonse DAUDET
+o Afficher les titres des livres que Chloé n’a pas encore rendus à la bibliothèque.
+o Afficher les titres des livres que Chloé n’a pas encore empruntés.
+o Afficher le prénom de l’abonné ayant emprunté le plus de livres
+o Afficher le nombre de livre différents emprunté par Guillaume
+o Afficher la liste des abonnés ayant emprunté le livre « Une Vie » sur l’année 2011
+o Afficher le nombre de livres empruntés par chaque abonné
+o Afficher la liste des abonnés avec les titres des livres qu’ils ont empruntés ainsi que la date de l’emprunt
+

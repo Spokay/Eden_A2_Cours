@@ -1,0 +1,9 @@
+Compteur de visite
+Votre premier exemple d’utilisation des fichiers est un compteur de visites très simple enregistrant le nombre cumulé de visites dans un fichier nommé compteur.txt. À chaque connexion, le script vérifie si ce fichier existe déjà
+
+
+affichage donnes du formulaire
+Vous allez maintenant saisir le nom et le prénom des visiteurs et ajouter dans le fichier la date de la saisie grâce à la fonction time()  puis l’afficher comme sur la figure suivante .
+
+créer un script permettant d’implanter sur un site avec un système de vote enregistrant les choix des visiteurs effectués grâce à un formulaire de saisie. Chaque proposition de vote pour un footballeur est faite à l’aide d’un bouton radio
+La partie Affichage des résultats lit tout le fichier puis affiche les résultats en nombre de voix et en pourcentage selon l’ordre croissant.

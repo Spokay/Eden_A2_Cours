@@ -1,0 +1,2 @@
+select * from emprunt|bibliotheque|2021-12-03 16:27:23
+select * from emprunt|bibliotheque|2021-12-03 16:27:47

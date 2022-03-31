@@ -1,0 +1,41 @@
+TP : un blog avec des commentaires
+Le blog est probablement l'application la plus courante que l'on réalise en PHP avec MySQL. Bien qu'il soit conseillé d'utiliser un système tout prêt (en téléchargeant Wordpress ou Dotclear, par exemple), en créer un de toutes pièces est un excellent exercice.
+Le but de ce TP n'est pas de vous faire créer un blog de A à Z, car ce serait un peu long, mais plutôt d'appliquer les dernières notions de SQL que vous venez d'apprendre sur les fonctions et les dates.
+Chaque billet du blog possèdera ses propres commentaires. Dans ce TP, nous nous concentrerons uniquement sur l'affichage des billets et des commentaires ; ce sera à vous par la suite de compléter le blog pour y insérer des formulaires d'ajout et de modification du contenu.
+Instructions pour réaliser le TP
+Pour ce TP comme pour le précédent, nous allons nous préparer ensemble en passant en revue les points suivants :
+prérequis ;
+objectifs ;
+structure de la table MySQL ; structure des pages PHP.
+Prérequis
+Dans ce TP, nous allons nous concentrer sur la base de données. Nous aurons besoin des notions suivantes :
+lire dans une table ;
+utilisation de PDO et des requêtes préparées ; utilisation de fonctions SQL ;
+manipulation des dates en SQL.
+Objectifs
+Commençons par définir ce qu'on veut arriver à faire. Un système de blog avec des commentaires, oui, mais encore ? Il faut savoir jusqu'où on veut aller, ce qu'on a l'intention de réaliser et ce qu'on va laisser de côté.
+Si on est trop ambitieux, on risque de le regretter : on pourrait en effet y passer des jours et ce TP deviendrait long, complexe et fastidieux. Je vous propose donc de réaliser l'affichage de base d'un blog et des commentaires associés auxbillets, et je vous inviterai par la suite à l'améliorer pour créer l'interface de gestion des billets et d'ajout de commentaires.
+L'ajout de billets et de commentaires n'est donc pas au programme de ce TP, ce qui va nous permettre de nous concentrer sur l'affichage de ces derniers.
+
+
+Les pages à développer
+Il y aura deuxpages à réaliser :
+index.php : liste des cinq derniers billets ;
+commentaires.php : affichage d'un billet et de ses commentaires.
+
+
+les tables : 
+ - billets
+id (int) : identifiant du billet, clé primaire et auto_increment ;
+ titre (varchar 255) : titre du billet ;
+contenu (text) : contenu du billet ;
+date_creation (datetime) : date et heure de création du billet.
+
+
+De même, voici la structure que l'on va utiliser pour la table commentaires :
+id (int) : identifiant du commentaire, clé primaire et auto_increment ;
+ id_billet (int) : identifiant du billet auquel correspond ce commentaire ;
+  auteur (varchar 255) : auteur du commentaire ;
+commentaire (text) : contenu du commentaire ;
+date_commentaire (datetime) : date et heure auxquelles le commentaire a été posté.
+

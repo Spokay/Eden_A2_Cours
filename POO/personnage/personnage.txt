@@ -1,0 +1,13 @@
+mettons en place deux personnage qui ont chacun une force, une localisation, une certaine experience, et enfin des dégats.
+toutes ces caractéristiques correspondentent à des valeurs.
+Ces capacités corres^pondent à des fonctions.
+Si un personnage A frappe un personnage B, le personnage B perd des points de vie et subit des dégats, et le personnage A gagne en experience .
+on peut créer deux formulaires pour visualiser le combat .
+- chaque personnage aura au départ 100 pointr de vie et si ses points descendent jusqu'à 0, il mourra
+
+- Les propriétés doivent être en private
+- une methode deplacer qui déplacera le personnage (modifiera sa localisation)
+- une methode frapper() qui frappera un personnage (suivant le force qu'il a)
+- une methode gagnerExperience() augmentant l'attribut $experience du personnage
+
+

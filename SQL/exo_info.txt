@@ -1,0 +1,21 @@
+Pour vous entrainer, voici quelques questions qui vous permettront d'élaborer des requêtes et mener vers la réponse :
+1. Afficher la profession de l'employé 547.
+2. Afficher la date d'embauche de : Amandine.
+3. Afficher le nombre de commerciaux.
+4. Afficher le coût des commerciaux sur 1 année.
+5. Afficher le salaire moyen par service.
+6. Afficher le nombre de recrutements sur l'année 2010.
+7. Augmenter le salaire pour chaque employé de 100€.
+8. Afficher le nombre de services (différents).
+9. Afficher les informations de l'employé du service commercial gagnant le salaire le plus élevé
+10. Afficher l'employé ayant été embauché en dernier.
+11. Séléctionnez les titres des livres qui n'ont pas été rendu
+12. Selectionnez le prenom des abonnés ayant emprunté un livre le 2014-12-19
+13. Selectionnez la liste des abonnés ayant déja emprunté un livre d'alphonse dodet.
+14. Afficher les titres des livre que chloe a emprunté a la bibliothèque.
+15. afficher le nombre de fois ou guillaume s'est rendu à la bibliothèque
+16. afficher les dates auquel guillaume s'est rendu a la    bibliothèque pour emprunter ou rendre un livre
+17. qui a emprunté le livre 'Une vie' en 2014
+18.Compter le nombre de livres emprunté par chaques abonnés
+19. Qui a emprunté quoi et quand ?
+20. afficher le prenom des abonnés avec le numero de livre qu'ils ont empruntés

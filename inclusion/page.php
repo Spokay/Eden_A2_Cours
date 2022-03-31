@@ -1,0 +1,2 @@
+<h2>page a inclure</h2>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet beatae cumque delectus dolor esse illum laborum nesciunt soluta. Exercitationem natus rem ullam! Ipsa minima quaerat quo! Autem, labore, perspiciatis?

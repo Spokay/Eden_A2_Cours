@@ -1,0 +1,28 @@
+/*********************** Conditions **************************/
+
+Exercice 1 :
+Rédiger une expression conditionnelle pour tester si un nombre est à la fois un
+multiple de 3 et de 5.
+
+Exercice 2 :
+Écrire une expression conditionnelle utilisant les variables $age et
+$sexe dans une instruction if pour sélectionner une personne de sexe féminin
+dont l’âge est compris
+entre 21 et 40 ans et afficher un message de bienvenue approprié.
+
+Exercice 3 :
+Affecter respectivement les valeurs 150, 350 et 10 aux variables prix_table,
+prix_armoire et nombre.
+• Afficher le prix pour les 10 armoires.
+• Comparer le prix de l’armoire et de la table et afficher quel est le prix le
+plus élevé. (ici on va mettre un "if", un "elseif" et un "else")
+
+Exercice 4 :
+Déclarer une variable $heure qui contient la valeur de type integer de votre
+choix comprise entre 0 et 24. Créer une condition qui affiche un message si
+l'heure est le matin, l'après-midi ou la nuit.
+
+Exercice 5
+Tester ces differents pays en utilisant un switch et d'afficher un message de bienvenue comme: bienvenue en france , italie...
+Ces pays sont: france , italie, espagne, angleterre.
+N'oublier pas de mettre un defaultau cas où

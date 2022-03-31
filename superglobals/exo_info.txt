@@ -1,0 +1,55 @@
+/****************** Exos sur la superglobal $_GET *********************/
+ Exercice 1
+Pour cet exercice, nous allons créer plusieurs liens en HTML (qui pointent vers la même page) avec une récupération des paramètres en PHP.
+L'objectif est de récupérer les paramètres véhiculés par l'url sur la même page.
+ Créez une page « lien.php ».
+explication PHP
+
+Exercice 2
+Créer une page avec deux liens : homme, femme.
+Récupérer le texte du lien cliqué en affichant le message "Vous êtes un Homme" ou "Vous êtes une femme".
+
+Exercice 3
+Créer une page1 avec plusieurs liens (contexte : carte de restaurant) : pizza, salade, viande, poisson.
+Récupérer le plat cliqué (dans la page1) et afficher-le sur la page2 en adressant un message correspondant au choix de l'internaute.
+Exemple si l'on a cliqué sur pizza : "Vous avez choisi de manger 1 pizza" .
+
+/****************** Exos sur la superglobal $_POST *********************/
+
+Exercice 4
+Pour cet exercice, nous allons créer un formulaire en HTML avec une récupération des saisies en PHP.
+L'objectif est de récupérer les saisies postées sur la même page (juste au dessus du formulaire).
+ Créez une page « formulaire.php ».
+
+Exercice 5
+Créer un formulaire en affichant les saisies récupérées sur la même page.
+Champ à prévoir (contexte : produit) : titre, couleur, taille, poids, prix, description, stock, fournisseur.
+
+Exercice 6
+Créer un formulaire en affichant les saisies récupérées sur deux pages différentes.
+Champ à prévoir (contexte : voiture) : marque, modele, couleur, km, carburant, annee, prix, puissance, options.
+
+Exercice 7
+Créer un formulaire en affichant les saisies récupérées et en controlant que le pseudo soit compris entre 3 et 10 caractères maximum (sinon prévoir un message d'erreur).
+Champ à prévoir (contexte : membre) : pseudo, mdp, email.
+
+Exercice 8
+Créez une page « calculatrice.php ».
+La page calculatrice est un formulaire avec un menu déroulant qui nous permet de choisir le signe de l’opération (addition, soustraction, multiplication, division).
+
+
+
+-----------------COOKIES !-------------------
+Exo1 :
+Créer 1 fichier nommé langue.php
+
+Créer 4 liens HTML pointant vers la même page (soit un href sur langue.php)
+Les liens seront : French - English - Italy - Spain (vous pouvez aussi ajouter des drapeaux en image)
+
+Lorsque l'on clique sur l'un des liens HTML, nous n'irons nulle part et devrons rester sur la même page (soit langue.php), cependant il faudra transmettre une information dans l'url du type : ?pays=fr (pour french), ?pays=en (pour english), ?pays=it (pour Italy), ?pays=es (pour Spain)
+
+Ensuite, l'idéal serait de récupérer l'argument passé dans l'url (via $_GET) et de l'afficher sur la page web.
+Si l'internaute clique sur French on affichera fr, si l'internaute clique English on affichera en, si l'internaute clique Italy on affichera it, et enfin si l'internaute clique Spain on affichera es. Toujours dans la même page web !
+
+Adaptons et modifions un peu le code pour sauvegarder la langue de l'internaute dans un cookie :
+

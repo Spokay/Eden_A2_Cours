@@ -1,0 +1,52 @@
+- nous allons essayer de voir si une variable (entrée par un visiteur via un formulaire, par exemple) correspond bien à un numéro de téléphone.Je vais me baser sur les numéros de téléphone français . Un numéro de téléphone français comporte 10 chiffres. Par exemple : « 01 53 78 99 99 ». Il faut respecter les règles suivantes :
+le premier chiffre est TOUJOURS un 0 ;
+le second chiffre va de 1 à 7 (1 pour la région parisienne... 6 et 7 pour les téléphones portables), mais il y a aussi le 8 (ce sont des numéros spéciaux),ensuite viennent les 8 chiffres restants (ils peuvent aller de 0 à 9 sans problème).
+Maintenant, on va supposer que la personne peut taper un espace  après tous les deux chiffres (comme c'est courant de le faire en France), mais aussi un point ou un tiret. Notre regex devra donc accepter les numéros de téléphone suivants :
+0153789999  /  0153789999 /  01-53-78-99-99 /  01.53.78.99.99 / 0153 78 99 99 / 0153.78 99-99
+
+
+- On a tout d'abord le pseudonyme (au minimum une lettre, mais c'est plutôt rare). Il peut y avoir des lettres minuscules (pas de majuscules), des chiffres, des points, des tirets et des underscores « _ ».
+Il ya ensuite une arobase:@.
+Ensuite il y a le nom de domaine. Pour ce nom, même règle que pour le pseudonyme : que des minuscles, des chiffres, des
+tirets, des points et des underscores. La seule différence – vous ne pouviez pas forcément deviner – c'est qu'il y a au moins deux caractères (par exemple, « a.com» n'existe pas, mais « aa.com» oui).
+Enfin, il y a l'extension (comme « .fr »). Cette extension comporte un point, suivi de deux à quatre lettres (minuscules).
+En effet, il y a « .es », « .de », mais aussi « .com », « .net », « .org », « .info », etc.
+L'adresse e-mail peut donc ressembler à j.dupont_2@orange.fr.
+
+- Créer une table visiteur avec comme nom de champ  « nom » et  « ip »
+	- Insérrer dans la table 5 ip différents
+	- Selectionner  les noms des visiteurs dont l’ip commence par 84.254
+- Écrire un script php qui supprime les caractères non numériques sauf les point (.) ou virgule(,) . Exemple: $123,34.00A donnera 123,34.00
+- Écrire un script qui supprime les espaces dans une chaine de caractères
+- Write a PHP script to remove all characters from a string except a-z A-Z 0-9 or "  »
+Écrire un script qui supprime tous les caractères sauf a-z A-Z 0-9 ou ‘  ‘ (espace)
+
+
+Raccourci
+Signification
+
+\d
+
+Indique un chiffre. Ça revient exactement à taper [0-9]
+\D
+
+Indique ce qui n'est PAS un chiffre. Ça revient à taper [^0-9]
+\w
+Indique un caractère alphanumérique ou un tiret de soulignement. Cela correspond à [a-zA-Z0-9_]
+\W
+Indique ce qui n'est PAS un mot. Si vous avez suivi, ça revient à taper[^a-zA-Z0-9_]
+\t
+Indique une tabulation
+\n
+Indique une nouvelle ligne
+\r
+Indique un retour chariot
+\s
+Indique un espace blanc
+\S
+Indique ce qui n'est PAS un espace blanc (\t \n \r)
+.
+Indique n'importe quel caractère. Il autorise donc tout !
+
+
+
