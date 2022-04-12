@@ -1,4 +1,5 @@
 <?php
+
 include("inc/init.inc.php");
 include("inc/haut.inc.php");
 if(isConnected()){
