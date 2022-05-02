@@ -44,11 +44,11 @@ class Rectangle extends Mobilier{
     }
 
     public function getPerimetre(){
-        return ($this->getCotes() * 4);
+        return (($this->getLongueur() * 2) + ($this->getLargeur() * 2));
     }
-    // cette fonction permet de récupérer la surface du carré
+    // cette fonction permet de récupérer la surface du rectangle
     public function getSurface(){
-        return ($this->getCotes() * $this->getCotes());
+        return (($this->getLongueur() * $this->getLongueur()) * ($this->getLargeur() * $this->getLargeur()));
     }
 
 }

@@ -1,6 +1,6 @@
 <?php
-
-class Triangle extends Mobilier{
+require_once("Mobilier.php");
+abstract class Triangle extends Mobilier{
     protected $cote1;
     protected $cote2;
     protected $cote3;
@@ -52,8 +52,16 @@ class Triangle extends Mobilier{
     {
         $this->cote3 = $cote3;
     }
+
+    public function __construct($attributes)
+    {
+        parent::__construct($attributes);
+    }
+
     // cette fonction permet de récupérer le périmetre d'un triangle
     public function getPerimetre(){
         return ($this->getCote1() + $this->getCote2() + $this->getCote3());
     }
+
+    abstract public function getSurface();
 }
