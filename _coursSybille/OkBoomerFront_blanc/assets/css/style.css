@@ -1,0 +1,196 @@
+/*Imports*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* dart-sass/sass.bat assets/scss:assets/css --watch */
+/* ------ GLOBAL ------ */
+* {
+  box-sizing: border-box;
+}
+
+/* round to 10px */
+html {
+  font-size: 62.5%;
+}
+
+/* Settings for p tags */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+  font-size: 2.4rem;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.shadow {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.uppcase {
+  text-transform: uppercase;
+}
+
+.to-hide {
+  animation: fadeIn 1s;
+}
+
+.display-none, .display-none * {
+  display: none;
+}
+
+.displayed {
+  height: auto;
+  opacity: 1;
+}
+
+.max-width {
+  width: 100% !important;
+}
+
+/* ------ /GLOBAL ------ */
+/* ------ HEADER ------ */
+.head-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #eaebf5;
+}
+.head-container .img-header img {
+  object-fit: contain;
+}
+.head-container .head-titles {
+  padding: 10px 20px 20px 20px;
+  text-align: center;
+}
+.head-container .head-titles h1 {
+  margin: 0;
+  font-size: 6.1rem;
+  font-weight: bold;
+}
+.head-container .head-titles h1 .red-title {
+  color: #FF7474;
+}
+.head-container .head-titles p {
+  margin: 0;
+}
+
+/* ------ /HEADER ------ */
+/* ------ MAIN ------ */
+/*articles*/
+.article {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 20px;
+  border: 2px solid #dbdce6;
+}
+.article .article-content {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5px 10px;
+  justify-content: space-between;
+}
+.article .article-content .article-toggler i {
+  width: 30px;
+  height: 30px;
+  display: block;
+  font-size: 30px;
+  color: #808291;
+}
+.article .article-content .article-texts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.article .article-content .article-texts h3 {
+  margin: 0;
+  line-height: normal;
+  max-width: 90%;
+}
+.article .article-footer {
+  background-color: #eaebf5;
+  display: flex;
+  align-self: flex-end;
+  padding: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.article .article-footer span {
+  margin: 0 10px;
+}
+.article .article-footer span i {
+  margin: 0 4px;
+}
+.article > div:not(.article-thumbnail) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ------ /MAIN ------ */
+/* ------ FOOTER ------ */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #FF7474;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+footer p {
+  max-width: 60%;
+}
+
+/* ------ /FOOTER ------ */
+@media screen and (min-width: 768px) {
+  .article {
+    flex-direction: row;
+    margin: 50px 20px;
+  }
+  .article .article-thumbnail {
+    width: 30%;
+  }
+  .article > div:not(.article-thumbnail) {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.clear {
+  clear: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
